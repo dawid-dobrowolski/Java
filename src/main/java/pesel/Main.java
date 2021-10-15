@@ -9,6 +9,9 @@ PESEL powinien mieć statyczną metodę check sprawdzającą czy podany pesel je
  */
 public class Main {
     public static void main(String[] args) {
-
+        Pesel pesel = new Pesel("01235122310");
+        Pesel pesel2 = new Pesel("01285127315");
+        pesel.compare(pesel,pesel2);
+        pesel.check(pesel);
     }
 }
