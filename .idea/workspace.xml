@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Lab1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/javaframe/DataFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javaframe/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javaframe/Series.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/javaframe/DataFrameTest.java" afterDir="false" />
+    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Series.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/javaframe/SeriesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pesel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pesel/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaframe/DataFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaframe/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaframe/Series.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/javaframe/DataFrameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javaframe/DataFrameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +51,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DataFrameTest">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pesel.Main" />
       <module name="JavaFrame" />
@@ -71,8 +80,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DataFrameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaFrame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaframe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javaframe" />
+      <option name="MAIN_CLASS_NAME" value="javaframe.DataFrameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeriesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaFrame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaframe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javaframe" />
+      <option name="MAIN_CLASS_NAME" value="javaframe.SeriesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DataFrameTest" />
+        <item itemvalue="JUnit.SeriesTest" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
@@ -151,16 +192,5 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Lab1" />
     <option name="LAST_COMMIT_MESSAGE" value="Lab1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/javaframe/DataFrame.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
