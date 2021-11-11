@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="DataFrameV1" />
+    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="DataFrameV1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaframe/DataFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaframe/DataFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/javaframe/DataFrameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javaframe/DataFrameTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lab2" />
+      </map>
+    </option>
     <option name="RECENT_COMMON_BRANCH" value="lab1" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
@@ -40,11 +49,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/javaframe" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/javaframe" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/javaframe" />
       <recent name="$PROJECT_DIR$/src/main/java/javaframe" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
@@ -63,9 +73,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="DataFrameTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaFrame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DataFrameTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,6 +93,22 @@
       <option name="PACKAGE_NAME" value="javaframe" />
       <option name="MAIN_CLASS_NAME" value="javaframe.DataFrameTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataFrameTest.testIlocFromTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaFrame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaframe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javaframe" />
+      <option name="MAIN_CLASS_NAME" value="javaframe.DataFrameTest" />
+      <option name="METHOD_NAME" value="testIlocFromTo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,9 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DataFrameTest" />
+        <item itemvalue="JUnit.DataFrameTest.testIlocFromTo" />
         <item itemvalue="JUnit.SeriesTest" />
+        <item itemvalue="JUnit.DataFrameTest (1)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +155,10 @@
       <workItem from="1634986267025" duration="8694000" />
       <workItem from="1635187730234" duration="4956000" />
       <workItem from="1635208193591" duration="594000" />
+      <workItem from="1636442922848" duration="3597000" />
+      <workItem from="1636501953143" duration="924000" />
+      <workItem from="1636589930350" duration="202000" />
+      <workItem from="1636590234675" duration="1126000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1634288449823</created>
@@ -155,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636437491767</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="DataFrameV1">
+      <created>1636437634992</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636437634992</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +212,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lab1" />
+                        <option value="origin/lab2" />
                       </list>
                     </value>
                   </entry>
@@ -190,5 +230,21 @@
     <MESSAGE value="Lab1" />
     <MESSAGE value="DataFrameV1" />
     <option name="LAST_COMMIT_MESSAGE" value="DataFrameV1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/javaframe/DataFrameTest.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/javaframe/DataFrameTest.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

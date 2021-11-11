@@ -48,41 +48,11 @@ public class DataFrame {
         }
     }
 
-    private DataFrame(List<String> colnames, List<String> coltypes, List<Series> data) {
-        this.colnames = new ArrayList(Arrays.asList(colnames));
-        this.coltypes = new ArrayList(Arrays.asList(coltypes));
-        assert this.colnames.size() == this.coltypes.size();
-
-        data = new ArrayList<>(this.colnames.size());
-
-        Iterator<String> itColnames = this.colnames.iterator();
-        Iterator<String> itColtypes = this.coltypes.iterator();
-        while (itColnames.hasNext() && itColtypes.hasNext()) {
-            String type = itColtypes.next();
-            switch (type) {
-                case "int":
-                    data.add(new Series(itColnames.next(), type, new ArrayList<Integer>()));
-                    break;
-                case "String":
-                    data.add(new Series(itColnames.next(), type, new ArrayList<String>()));
-                    break;
-                case "long":
-                    data.add(new Series(itColnames.next(), type, new ArrayList<Long>()));
-                    break;
-                case "float":
-                    data.add(new Series(itColnames.next(), type, new ArrayList<Float>()));
-                    break;
-                case "double":
-                    data.add(new Series(itColnames.next(), type, new ArrayList<Double>()));
-                    break;
-                case "boolean":
-                    data.add(new Series(itColnames.next(), type, new ArrayList<Boolean>()));
-                    break;
-                default:
-                    throw new IllegalArgumentException("Unknown column type =" + type);
-
-            }
-        }
+    private DataFrame(List<String> colnames, List<String> coltypes,
+                      List<Series> data) {
+        this.colnames = new ArrayList(colnames);
+        this.coltypes = new ArrayList(coltypes);
+        this.data = new ArrayList(data);
     }
 
     public int size() {
@@ -115,8 +85,8 @@ public class DataFrame {
         for (String colname : colnames) {
             index++;
             if (colname.equals(c)) {
-                final Series series = new Series(this.colnames.get(i), this.coltypes.get(i), this.data);
-                series.setValue(i,value,coltypes.get(i));
+                final Series series = data.get(index);
+                series.setValue(i,value,coltypes.get(index));
                 return;
             }
         }
@@ -152,12 +122,12 @@ public class DataFrame {
                 if (columnsToAddNames.equals(colname)) {
                     newColnames.add(columnsToAddNames);
                     newColtypes.add(this.coltypes.get(index));
-                    final Series series = new Series(this.colnames.get(index), this.coltypes.get(index), this.data);
+                    final Series series = this.data.get(index);
                     if (from >= 0) {
                         assert to >= from;
                         newData.add(this.data.get(index));
                     } else {
-                        newData.add(this.data.get(index));
+                        newData.add(series.copy(copy));
                     }
                 }
             }
@@ -170,14 +140,14 @@ public class DataFrame {
         if (inplace) {
             df = this;
         } else {
-            df = new DataFrame(this.colnames,this.coltypes,this.data);
+            df = this.copy();
         }
         df.colnames.add(colname);
         df.coltypes.add(dtype);
 
         Series emptySeries = new Series(colname, dtype);
         for (int i = 0; i < df.size(); i++) {
-            emptySeries.addValue(colname, dtype);
+            emptySeries.addValue("0", dtype);
         }
         df.data.add(emptySeries);
 
@@ -196,7 +166,7 @@ public class DataFrame {
         if (inplace) {
             df = this;
         } else {
-            df = new DataFrame(this.colnames,this.coltypes,this.data);
+            df = copy();
         }
 
         int i = -1;
