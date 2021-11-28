@@ -6,74 +6,75 @@ import java.util.Scanner;
 
 public class Cryptographer {
 
-  private Cryptographer() {}
-
-  public static void cryptfile(String pathToFileIn, String pathToFileOut, Algorithm algorithm)
-          throws IOException {
-    File fileIn = new File(pathToFileIn);
-    File fileOut = new File(pathToFileOut);
-
-    FileReader in = null;
-    FileWriter out = null;
-
-    in = new FileReader(fileIn);
-    out = new FileWriter(fileOut);
-
-    BufferedReader bufferread = null;
-    bufferread = new BufferedReader(in);
-
-    StringBuffer buffer = null;
-    buffer = new StringBuffer();
-
-    String l;
-    while((l = bufferread.readLine()) != null){
-      buffer.append(algorithm.crypt(l));
-      buffer.append("\n");
+    private Cryptographer() {
     }
 
-    BufferedWriter bufferwrite = null;
-    bufferwrite= new BufferedWriter(out);
+    public static void cryptfile(String pathToFileIn, String pathToFileOut, Algorithm algorithm)
+            throws IOException {
+        File fileIn = new File(pathToFileIn);
+        File fileOut = new File(pathToFileOut);
 
-    bufferwrite.write(buffer.toString());
-    bufferwrite.flush();
+        FileReader in = null;
+        FileWriter out = null;
 
-    in.close();
-    out.close();
+        in = new FileReader(fileIn);
+        out = new FileWriter(fileOut);
 
-  }
+        BufferedReader bufferread = null;
+        bufferread = new BufferedReader(in);
 
-  public static void decryptfile(String pathToFileIn, String pathToFileOut, Algorithm algorithm)
-          throws IOException {
-    File fileIn = new File(pathToFileIn);
-    File fileOut = new File(pathToFileOut);
+        StringBuffer buffer = null;
+        buffer = new StringBuffer();
 
-    FileReader in = null;
-    FileWriter out = null;
+        String l;
+        while ((l = bufferread.readLine()) != null) {
+            buffer.append(algorithm.crypt(l));
+            buffer.append("\n");
+        }
 
-    in = new FileReader(fileIn);
-    out = new FileWriter(fileOut);
+        BufferedWriter bufferwrite = null;
+        bufferwrite = new BufferedWriter(out);
 
-    BufferedReader bufferread = null;
-    bufferread = new BufferedReader(in);
+        bufferwrite.write(buffer.toString());
+        bufferwrite.flush();
 
-    StringBuffer buffer = null;
-    buffer = new StringBuffer();
+        in.close();
+        out.close();
 
-    String l;
-    while((l = bufferread.readLine()) != null){
-      buffer.append(algorithm.decrypt(l));
-      buffer.append("\n");
     }
 
-    BufferedWriter bufferwrite = null;
-    bufferwrite= new BufferedWriter(out);
+    public static void decryptfile(String pathToFileIn, String pathToFileOut, Algorithm algorithm)
+            throws IOException {
+        File fileIn = new File(pathToFileIn);
+        File fileOut = new File(pathToFileOut);
 
-    bufferwrite.write(buffer.toString());
-    bufferwrite.flush();
+        FileReader in = null;
+        FileWriter out = null;
 
-    in.close();
-    out.close();
-  }
+        in = new FileReader(fileIn);
+        out = new FileWriter(fileOut);
+
+        BufferedReader bufferread = null;
+        bufferread = new BufferedReader(in);
+
+        StringBuffer buffer = null;
+        buffer = new StringBuffer();
+
+        String l;
+        while ((l = bufferread.readLine()) != null) {
+            buffer.append(algorithm.decrypt(l));
+            buffer.append("\n");
+        }
+
+        BufferedWriter bufferwrite = null;
+        bufferwrite = new BufferedWriter(out);
+
+        bufferwrite.write(buffer.toString());
+        bufferwrite.flush();
+
+        in.close();
+        out.close();
+    }
 }
 
 
