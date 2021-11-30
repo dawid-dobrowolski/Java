@@ -4,16 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Crypto">
+    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="DataFrame2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/EmailMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/EmailRecipient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/PushMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/PushRecipient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/PushSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/Recipient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/SenderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/PushSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Algorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Cryptographer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Polybius.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/ROT11.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/CryptographerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/PolybiusTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/ROT11Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/BoolValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/DataFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/DateTimeValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/DoubleValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/FloatValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/IntValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/LongValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Series.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/ShortValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/StringValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Value.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/decrypt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/poli-input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/poli-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tocrypt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/BoolValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/DataFrameTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/DateTimeValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/DoubleValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/FloatValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/IntValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/LongValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/SeriesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/ShortValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/StringValueTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +60,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab4" />
+        <entry key="$PROJECT_DIR$" value="lab5" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="lab1" />
@@ -54,8 +84,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java2021-public2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -195,7 +226,8 @@
       <workItem from="1638140029724" duration="1758000" />
       <workItem from="1638222981095" duration="183000" />
       <workItem from="1638223228210" duration="1068000" />
-      <workItem from="1638224318428" duration="949000" />
+      <workItem from="1638224318428" duration="1531000" />
+      <workItem from="1638255873296" duration="5043000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1634288449823</created>
@@ -246,7 +278,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638141652223</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="DataFrame2">
+      <created>1638225611003</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638225611003</updated>
+    </task>
+    <task id="LOCAL-00009" summary="DataFrame2">
+      <created>1638225736766</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638225736766</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +309,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lab6" />
+                        <option value="lab4" />
                       </list>
                     </value>
                   </entry>
@@ -284,7 +330,8 @@
     <MESSAGE value="Lab1" />
     <MESSAGE value="DataFrameV1" />
     <MESSAGE value="Crypto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crypto" />
+    <MESSAGE value="DataFrame2" />
+    <option name="LAST_COMMIT_MESSAGE" value="DataFrame2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
