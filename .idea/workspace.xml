@@ -4,25 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Lab1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailRecipient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailRecipientProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/PushMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/PushRecipient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/PushSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/Recipient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/RecipientProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/SenderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sender/SenderException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Threads2">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/decrypt.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/poli-input.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/poli-output.txt" beforeDir="false" />
@@ -72,6 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
   </component>
@@ -133,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634292783828</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Threads2">
+      <created>1640048491114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640048491114</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Threads2">
+      <created>1640048634377</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640048634377</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +148,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lab8" />
+                        <option value="origin/lab8" />
                       </list>
                     </value>
                   </entry>
@@ -180,6 +178,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Lab1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1" />
+    <MESSAGE value="Threads2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Threads2" />
   </component>
 </project>
