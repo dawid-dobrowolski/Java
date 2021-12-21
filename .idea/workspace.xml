@@ -4,16 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Crypto">
+    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Lab1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailMessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailRecipient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailRecipientProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/MessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/PushMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/PushRecipient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/PushSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/Recipient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/RecipientProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/SenderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sender/SenderException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Algorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Cryptographer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/Polybius.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/ROT11.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/CryptographerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/PolybiusTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/ROT11Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/decrypt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/poli-input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/poli-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tocrypt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decrypt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Algorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Cryptographer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Polybius.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/ROT11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/poli-input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/poli-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tocrypt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/edu/uj/CryptographerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/edu/uj/PolybiusTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/edu/uj/ROT11Test.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,20 +55,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab4" />
+        <entry key="$PROJECT_DIR$" value="lab1" />
       </map>
     </option>
-    <option name="RECENT_COMMON_BRANCH" value="lab1" />
+    <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
     <option name="ROOT_SYNC" value="SYNC" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="ProjectId" id="1zXIxFqxwdkaXfnutWz27RO3xDu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,100 +73,32 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java" />
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/java/pl/edu/uj" />
-      <recent name="$PROJECT_DIR$/src/test/java/javaframe" />
-      <recent name="$PROJECT_DIR$/src/main/java/javaframe" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.ROT11Test">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pesel.Main" />
+      <module name="JavaFrame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pesel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="JavaFrame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.uj.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CryptographerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaFrame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.uj.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.uj" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.CryptographerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PolybiusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaFrame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.uj.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.uj" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.PolybiusTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PolybiusTest.test_crypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaFrame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.uj.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.uj" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.PolybiusTest" />
-      <option name="METHOD_NAME" value="test_crypt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ROT11Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaFrame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.uj.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.uj" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.ROT11Test" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ROT11Test" />
-        <item itemvalue="JUnit.PolybiusTest" />
-        <item itemvalue="JUnit.CryptographerTest" />
-        <item itemvalue="JUnit.PolybiusTest.test_crypt" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -162,40 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634288255373</updated>
       <workItem from="1634288258631" duration="4559000" />
-      <workItem from="1634294515658" duration="3851000" />
-      <workItem from="1634555640209" duration="2507000" />
-      <workItem from="1634558189574" duration="717000" />
-      <workItem from="1634623689203" duration="4772000" />
-      <workItem from="1634943339170" duration="912000" />
-      <workItem from="1634986267025" duration="8694000" />
-      <workItem from="1635187730234" duration="4956000" />
-      <workItem from="1635208193591" duration="594000" />
-      <workItem from="1636442922848" duration="3597000" />
-      <workItem from="1636501953143" duration="924000" />
-      <workItem from="1636589930350" duration="202000" />
-      <workItem from="1636590234675" duration="1126000" />
-      <workItem from="1636980641551" duration="1880000" />
-      <workItem from="1637015440201" duration="464000" />
-      <workItem from="1637046627367" duration="4795000" />
-      <workItem from="1637328458938" duration="11000" />
-      <workItem from="1637328613952" duration="9409000" />
-      <workItem from="1637342279948" duration="12220000" />
-      <workItem from="1637503224299" duration="858000" />
-      <workItem from="1637596680270" duration="30000" />
-      <workItem from="1637607463219" duration="732000" />
-      <workItem from="1637652169302" duration="538000" />
-      <workItem from="1637653086822" duration="260000" />
-      <workItem from="1637871513069" duration="3271000" />
-      <workItem from="1637886728723" duration="2753000" />
-      <workItem from="1637889967228" duration="708000" />
-      <workItem from="1637925603715" duration="8645000" />
-      <workItem from="1638120086334" duration="11062000" />
-      <workItem from="1638132645283" duration="115000" />
-      <workItem from="1638132966780" duration="429000" />
-      <workItem from="1638140029724" duration="1758000" />
-      <workItem from="1638222981095" duration="183000" />
-      <workItem from="1638223228210" duration="1068000" />
-      <workItem from="1638224318428" duration="949000" />
+      <workItem from="1634294515658" duration="3460000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1634288449823</created>
@@ -211,42 +128,7 @@
       <option name="project" value="LOCAL" />
       <updated>1634292783828</updated>
     </task>
-    <task id="LOCAL-00003" summary="Lab1">
-      <created>1634298261883</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1634298261883</updated>
-    </task>
-    <task id="LOCAL-00004" summary="DataFrameV1">
-      <created>1636437491767</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1636437491767</updated>
-    </task>
-    <task id="LOCAL-00005" summary="DataFrameV1">
-      <created>1636437634992</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1636437634992</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Crypto">
-      <created>1638141224108</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1638141224108</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Crypto">
-      <created>1638141652223</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1638141652223</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +145,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lab6" />
+                        <option value="lab8" />
                       </list>
                     </value>
                   </entry>
@@ -274,26 +156,25 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="lab8" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/java2021" />
-    </ignored-roots>
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Lab1" />
-    <MESSAGE value="DataFrameV1" />
-    <MESSAGE value="Crypto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crypto" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1" />
   </component>
 </project>
