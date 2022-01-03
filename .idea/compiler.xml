@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaFrame" />
+        <module name="java2021" />
       </profile>
     </annotationProcessing>
   </component>

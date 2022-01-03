@@ -4,12 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Threads2">
+    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Threads2.1">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailMessageProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailRecipient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailRecipientProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/MessageProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/PushMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/PushRecipient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/PushSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/Recipient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/RecipientProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/Sender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/SenderApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sender/SenderException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/decrypt.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/poli-input.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/poli-output.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tocrypt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/EmailSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/EmailSenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/PushSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/PushSenderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/decrypt.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Algorithm.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Cryptographer.class" beforeDir="false" />
@@ -38,13 +59,16 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab1" />
+        <entry key="$PROJECT_DIR$" value="lab9" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
     <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1zXIxFqxwdkaXfnutWz27RO3xDu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -53,24 +77,29 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pesel.Main" />
-      <module name="JavaFrame" />
+  <component name="RunManager" selected="JUnit.pl.edu.uj.sender in java2021">
+    <configuration name="SenderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sender.SenderApplication" />
+      <module name="java2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pesel.*" />
+          <option name="PATTERN" value="sender.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,17 +107,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="JavaFrame" />
+    <configuration name="EmailSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.uj.sender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.uj.sender" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.sender.EmailSenderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PushSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.uj.sender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.uj.sender" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.sender.PushSenderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PushSenderTest.testOKMessageAndRecipient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.uj.sender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.uj.sender" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.sender.PushSenderTest" />
+      <option name="METHOD_NAME" value="testOKMessageAndRecipient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pl.edu.uj.sender in java2021" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.uj.sender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.uj.sender" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.pl.edu.uj.sender in java2021" />
+        <item itemvalue="JUnit.EmailSenderTest" />
+        <item itemvalue="JUnit.PushSenderTest.testOKMessageAndRecipient" />
+        <item itemvalue="JUnit.PushSenderTest" />
+        <item itemvalue="Application.SenderApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -102,6 +187,10 @@
       <updated>1634288255373</updated>
       <workItem from="1634288258631" duration="4559000" />
       <workItem from="1634294515658" duration="3460000" />
+      <workItem from="1641187757157" duration="1227000" />
+      <workItem from="1641230446396" duration="736000" />
+      <workItem from="1641237933744" duration="36000" />
+      <workItem from="1641238071248" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1634288449823</created>
@@ -131,7 +220,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640048634377</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Threads2">
+      <created>1640048841319</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640048841319</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Threads2.1">
+      <created>1641188722339</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641188722339</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +282,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Lab1" />
     <MESSAGE value="Threads2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Threads2" />
+    <MESSAGE value="Threads2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Threads2.1" />
   </component>
 </project>
