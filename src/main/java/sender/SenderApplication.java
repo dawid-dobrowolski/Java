@@ -74,15 +74,19 @@ public class SenderApplication {
 
         @Override
         public void run() {
-            while(queue.size() != 0) {
-                try {
-                    Thread.sleep(1000);
-                }catch(InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-                synchronized (queue) {
-                    queue.notify();
-                }
+            Message nextMessage;
+            try {
+                do {
+                    nextMessage = messageProvider.getNextMessage();
+                    if(nextMessage != null) {
+                        final Recipient nextRecipient = recipientProvider.getNextRecipient();
+                        synchronized (queue) {
+                            queue.add(new EmailPackage(nextMessage,nextRecipient));
+                        }
+                    }
+                } while(nextMessage != null);
+            } catch (InterruptedException e){
+                logger.error("Cannot enqueue message",e);
             }
         }
 
@@ -97,28 +101,20 @@ public class SenderApplication {
 
         @Override
         public void run() {
-            while(!queue.isEmpty()) {
-                synchronized (queue) {
-                    try {
-                        emailSender.send(queue.get(0).getNextMessage(), queue.get(0).getNextRecipient());
-                    } catch (SenderException e) {
-                        e.printStackTrace();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
+            do {
+                try {
+                    EmailPackage emailPackage = null;
+                    synchronized (queue) {
+                        if (!queue.isEmpty()) {
+                            logger.info("Message package to send");
+                            emailPackage = queue.remove(0);
+                        }
+                        emailSender.send(emailPackage.getNextMessage(),emailPackage.getNextRecipient());
                     }
-                    queue.remove(0);
-                    try {
-                        Thread.sleep(2000);
-                    }catch(InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                    try {
-                        queue.wait();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                } catch(InterruptedException | SenderException e) {
+                    logger.info("Cannot send a message");
                 }
-            }
+            } while(!queue.isEmpty());
         }
     }
     }
