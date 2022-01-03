@@ -1,0 +1,158 @@
+Index: src/main/java/pl/edu/uj/sender/SenderApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pl.edu.uj.sender;\n\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class SenderApplication {\n    private static final Logger logger = LoggerFactory.getLogger(SenderApplication.class);\n\n    public static void main(String[] args) throws InterruptedException {\n\n        if (args.length == 2) {\n            final int numberOfEnqueuingThreads = Integer.parseInt(args[0]);\n            final int numberOfSendingThreads = Integer.parseInt(args[1]);\n            logger.info(\"There will be %d enqueuing threads and %d sender threads\".formatted(numberOfEnqueuingThreads, numberOfSendingThreads));\n\n            EmailSender emailSender = new EmailSender();\n            EmailMessageProvider messageProvider = new EmailMessageProvider();\n            RecipientProvider recipientProvider = new EmailRecipientProvider();\n\n            List<EmailPackage> queue = new ArrayList<>();\n\n            List<Thread> threads = new ArrayList<>();\n            for (int i = 0; i < numberOfEnqueuingThreads; i++) {\n                threads.add(new Thread(new EmailEnquerRunnable(messageProvider, recipientProvider, queue)));\n            }\n            for (int i = 0; i < numberOfSendingThreads; i++) {\n                threads.add(new Thread(new EmailEnquerRunnable.EmailSenderRunnable(queue, emailSender)));\n            }\n\n            for (Thread thread : threads) {\n                thread.start();\n            }\n            for (Thread thread : threads) {\n                thread.join();\n            }\n\n        } else {\n            logger.error(\"Params should be: enqueuing-threads-count sender-threads-count\");\n            System.exit(-1);\n        }\n    }\n\n    private static class EmailPackage {\n        final Message nextMessage;\n        final Recipient nextRecipient;\n\n        public EmailPackage(Message nextMessage, Recipient nextRecipient) {\n            this.nextMessage = nextMessage;\n            this.nextRecipient = nextRecipient;\n        }\n\n        public Message getNextMessage() {\n            return nextMessage;\n        }\n\n        public Recipient getNextRecipient() {\n            return nextRecipient;\n        }\n    }\n\n    private static class EmailEnquerRunnable implements Runnable {\n        private final EmailMessageProvider messageProvider;\n        private final RecipientProvider recipientProvider;\n        private final List<EmailPackage> queue;\n\n        public EmailEnquerRunnable(EmailMessageProvider messageProvider, RecipientProvider recipientProvider, List<EmailPackage> queue) {\n            this.messageProvider = messageProvider;\n            this.recipientProvider = recipientProvider;\n            this.queue = queue;\n        }\n\n        @Override\n        public void run() {\n            while (queue.size() != 0) {\n                try {\n                    Thread.sleep(1000);\n                } catch (InterruptedException e) {\n                    throw new RuntimeException(e);\n                }\n                synchronized (queue) {\n                    queue.notify();\n                }\n            }\n        }\n\n        private static class EmailSenderRunnable implements Runnable {\n            private final List<EmailPackage> queue;\n            private final EmailSender emailSender;\n\n            public EmailSenderRunnable(List<EmailPackage> queue, EmailSender emailSender) {\n                this.queue = queue;\n                this.emailSender = emailSender;\n            }\n\n            @Override\n            public void run() {\n                while (!queue.isEmpty()) {\n                    synchronized (queue) {\n                        try {\n                            emailSender.send(queue.get(0).getNextMessage(), queue.get(0).getNextRecipient());\n                        } catch (SenderException e) {\n                            e.printStackTrace();\n                        } catch (InterruptedException e) {\n                            e.printStackTrace();\n                        }\n                        queue.remove(0);\n                        try {\n                            Thread.sleep(2000);\n                        } catch (InterruptedException e) {\n                            throw new RuntimeException(e);\n                        }\n                        try {\n                            queue.wait();\n                        } catch (InterruptedException e) {\n                            e.printStackTrace();\n                        }\n                    }\n                }\n            }\n        }\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/pl/edu/uj/sender/SenderApplication.java b/src/main/java/pl/edu/uj/sender/SenderApplication.java
+--- a/src/main/java/pl/edu/uj/sender/SenderApplication.java	
++++ b/src/main/java/pl/edu/uj/sender/SenderApplication.java	
+@@ -74,10 +74,10 @@
+ 
+         @Override
+         public void run() {
+-            while (queue.size() != 0) {
++            while(queue.size() != 0) {
+                 try {
+                     Thread.sleep(1000);
+-                } catch (InterruptedException e) {
++                }catch(InterruptedException e) {
+                     throw new RuntimeException(e);
+                 }
+                 synchronized (queue) {
+@@ -97,7 +97,7 @@
+ 
+             @Override
+             public void run() {
+-                while (!queue.isEmpty()) {
++                while(!queue.isEmpty()) {
+                     synchronized (queue) {
+                         try {
+                             emailSender.send(queue.get(0).getNextMessage(), queue.get(0).getNextRecipient());
+@@ -109,7 +109,7 @@
+                         queue.remove(0);
+                         try {
+                             Thread.sleep(2000);
+-                        } catch (InterruptedException e) {
++                        }catch(InterruptedException e) {
+                             throw new RuntimeException(e);
+                         }
+                         try {
+Index: src/main/java/pl/edu/uj/sender/EmailMessage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pl.edu.uj.sender;\n\npublic class EmailMessage extends Message {\n    private final String messageTitle;\n    private final String messageBody;\n\n    public EmailMessage(String messageTitle, String messageBody) {\n        this.messageTitle = messageTitle;\n        this.messageBody = messageBody;\n    }\n\n    @Override\n    public String getMessageTitle() {\n        return messageTitle;\n    }\n\n    @Override\n    public String getMessageBody() {\n        return messageBody;\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/pl/edu/uj/sender/EmailMessage.java b/src/main/java/pl/edu/uj/sender/EmailMessage.java
+--- a/src/main/java/pl/edu/uj/sender/EmailMessage.java	
++++ b/src/main/java/pl/edu/uj/sender/EmailMessage.java	
+@@ -1,21 +1,21 @@
+ package pl.edu.uj.sender;
+ 
+ public class EmailMessage extends Message {
+-    private final String messageTitle;
+-    private final String messageBody;
++  private final String messageTitle;
++  private final String messageBody;
+ 
+-    public EmailMessage(String messageTitle, String messageBody) {
+-        this.messageTitle = messageTitle;
+-        this.messageBody = messageBody;
+-    }
++  public EmailMessage(String messageTitle, String messageBody) {
++    this.messageTitle = messageTitle;
++    this.messageBody = messageBody;
++  }
+ 
+-    @Override
+-    public String getMessageTitle() {
+-        return messageTitle;
+-    }
++  @Override
++  public String getMessageTitle() {
++    return messageTitle;
++  }
+ 
+-    @Override
+-    public String getMessageBody() {
+-        return messageBody;
+-    }
++  @Override
++  public String getMessageBody() {
++    return messageBody;
++  }
+ }
+Index: src/main/java/pl/edu/uj/sender/PushRecipient.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pl.edu.uj.sender;\n\npublic class PushRecipient extends Recipient {\n    private final String recipientAddress;\n\n    public PushRecipient(String recipientAddress) {\n        this.recipientAddress = recipientAddress;\n    }\n\n    @Override\n    public String getRecipientAddress() {\n        return recipientAddress;\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/pl/edu/uj/sender/PushRecipient.java b/src/main/java/pl/edu/uj/sender/PushRecipient.java
+--- a/src/main/java/pl/edu/uj/sender/PushRecipient.java	
++++ b/src/main/java/pl/edu/uj/sender/PushRecipient.java	
+@@ -1,14 +1,14 @@
+ package pl.edu.uj.sender;
+ 
+ public class PushRecipient extends Recipient {
+-    private final String recipientAddress;
++  private final String recipientAddress;
+ 
+-    public PushRecipient(String recipientAddress) {
+-        this.recipientAddress = recipientAddress;
+-    }
++  public PushRecipient(String recipientAddress) {
++    this.recipientAddress = recipientAddress;
++  }
+ 
+-    @Override
+-    public String getRecipientAddress() {
+-        return recipientAddress;
+-    }
++  @Override
++  public String getRecipientAddress() {
++    return recipientAddress;
++  }
+ }
+Index: src/main/java/pl/edu/uj/sender/PushMessage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pl.edu.uj.sender;\n\npublic class PushMessage extends Message {\n    private final String messageTitle;\n    private final String messageBody;\n\n    public PushMessage(String messageTitle, String messageBody) {\n        this.messageTitle = messageTitle;\n        this.messageBody = messageBody;\n    }\n\n    @Override\n    public String getMessageTitle() {\n        return messageTitle;\n    }\n\n    @Override\n    public String getMessageBody() {\n        return messageBody;\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/pl/edu/uj/sender/PushMessage.java b/src/main/java/pl/edu/uj/sender/PushMessage.java
+--- a/src/main/java/pl/edu/uj/sender/PushMessage.java	
++++ b/src/main/java/pl/edu/uj/sender/PushMessage.java	
+@@ -1,21 +1,21 @@
+ package pl.edu.uj.sender;
+ 
+ public class PushMessage extends Message {
+-    private final String messageTitle;
+-    private final String messageBody;
++  private final String messageTitle;
++  private final String messageBody;
+ 
+-    public PushMessage(String messageTitle, String messageBody) {
+-        this.messageTitle = messageTitle;
+-        this.messageBody = messageBody;
+-    }
++  public PushMessage(String messageTitle, String messageBody) {
++    this.messageTitle = messageTitle;
++    this.messageBody = messageBody;
++  }
+ 
+-    @Override
+-    public String getMessageTitle() {
+-        return messageTitle;
+-    }
++  @Override
++  public String getMessageTitle() {
++    return messageTitle;
++  }
+ 
+-    @Override
+-    public String getMessageBody() {
+-        return messageBody;
+-    }
++  @Override
++  public String getMessageBody() {
++    return messageBody;
++  }
+ }
