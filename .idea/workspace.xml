@@ -4,45 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Threads2.1">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Threads2.2">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailMessageProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailRecipient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailRecipientProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/EmailSender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/MessageProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/PushMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/PushRecipient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/PushSender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/Recipient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/RecipientProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/Sender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/SenderApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sender/SenderException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/decrypt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/poli-input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/poli-output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tocrypt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/EmailSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/EmailSenderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/PushSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/uj/sender/PushSenderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/decrypt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Algorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Cryptographer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/Polybius.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/ROT11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/poli-input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/poli-output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tocrypt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/edu/uj/CryptographerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/edu/uj/PolybiusTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/edu/uj/ROT11Test.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +21,10 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab9" />
+        <entry key="$PROJECT_DIR$" value="lab8" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="master" />
@@ -77,12 +42,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Pobrane/java2021-public-lab09_databases" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -94,12 +60,12 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.pl.edu.uj.sender in java2021">
-    <configuration name="SenderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sender.SenderApplication" />
+    <configuration name="SenderApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.edu.uj.sender.SenderApplication" />
       <module name="java2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sender.*" />
+          <option name="PATTERN" value="pl.edu.uj.sender.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,10 +136,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.pl.edu.uj.sender in java2021" />
+        <item itemvalue="Application.SenderApplication (1)" />
         <item itemvalue="JUnit.EmailSenderTest" />
         <item itemvalue="JUnit.PushSenderTest.testOKMessageAndRecipient" />
         <item itemvalue="JUnit.PushSenderTest" />
-        <item itemvalue="Application.SenderApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +156,12 @@
       <workItem from="1641187757157" duration="1227000" />
       <workItem from="1641230446396" duration="736000" />
       <workItem from="1641237933744" duration="36000" />
-      <workItem from="1641238071248" duration="359000" />
+      <workItem from="1641238071248" duration="1498000" />
+      <workItem from="1641246666790" duration="175000" />
+      <workItem from="1641246863028" duration="3000" />
+      <workItem from="1641280342646" duration="630000" />
+      <workItem from="1641561393358" duration="41000" />
+      <workItem from="1641843376986" duration="464000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1634288449823</created>
@@ -234,7 +205,28 @@
       <option name="project" value="LOCAL" />
       <updated>1641188722339</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Threads2.2">
+      <created>1641238494027</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641238494027</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Threads2.2">
+      <created>1641238601715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641238601715</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Threads2.2">
+      <created>1641238804117</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641238804117</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +275,7 @@
     <MESSAGE value="Lab1" />
     <MESSAGE value="Threads2" />
     <MESSAGE value="Threads2.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Threads2.1" />
+    <MESSAGE value="Threads2.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Threads2.2" />
   </component>
 </project>

@@ -1,5 +1,7 @@
 package pl.edu.uj.sender;
 
-public abstract class RecipientProvider {
-    public abstract Recipient getNextRecipient();
+import java.util.Optional;
+
+public interface RecipientProvider<T extends Recipient> {
+    Optional<T> getNextRecipient();
 }

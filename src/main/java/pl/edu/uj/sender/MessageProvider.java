@@ -1,5 +1,7 @@
 package pl.edu.uj.sender;
 
-public abstract class MessageProvider {
-    public abstract Message getNextMessage() throws InterruptedException;
+import java.util.Optional;
+
+public interface MessageProvider<T extends Message> {
+    Optional<T> getNextMessage() throws InterruptedException;
 }
