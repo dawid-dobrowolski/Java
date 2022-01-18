@@ -76,5 +76,4 @@ class PushSenderTest {
     Recipient recipient = new PushRecipient("abcdefghijklmnopqrstuvxyz1234789");
     assertThrows(SenderException.class, () -> sender.send(message, recipient));
   }
-
 }

@@ -40,8 +40,9 @@ public class EmailSender implements Sender {
         String bodyMD5 = DigestUtils.md5Hex(message.getMessageBody());
         String anonymizedRecipientAddress = "***@" + recipient.getRecipientAddress().split("@")[1];
 
-        sleep(1000); // sending
+        sleep(5000); // sending
 
+        /* Use System.out to graphically distinguish sending from logging */
         System.out.printf("[Email] Message sent, title= '%s', bodyMD5= '%s', recipient= '%s'%n",
                 message.getMessageTitle(), bodyMD5, anonymizedRecipientAddress);
     }
