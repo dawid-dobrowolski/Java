@@ -42,11 +42,13 @@ public class SenderConnection {
     public <T> Optional<T> executeQuery(String statement, SenderMapper<T> mapper) throws DatabaseException {
         if (connection != null) {
              ResultSet rs = null;
-            // Statement stmt = connection.createStatement() {
-
-           // }
-            //rs = stmt.executeQuery(//TODO);
-
+             try{
+            Statement stmt = connection.createStatement();
+            rs = stmt.executeQuery(statement);
+            return mapper.get(rs);
+                 } catch (SQLException e) {
+                 e.printStackTrace();
+             }
         } else {
             throw new DatabaseException("Not connected to %s".formatted(url));
         }

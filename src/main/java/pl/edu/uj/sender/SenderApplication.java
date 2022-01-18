@@ -135,7 +135,7 @@ public class SenderApplication {
                     logger.info("Getting message package to send.");
                     final Optional<EmailQueue> expectedEmailQueue = queueDAO.get(EmailQueueStatus.AWAITING.getId());
                     if (expectedEmailQueue.isPresent()) {
-                        EmailQueue emailQueueToProcess =
+                        EmailQueue emailQueueToProcess = expectedEmailQueue.get().copy();
                         processQueueElement(emailQueueToProcess);
                         counter = 0;
                     } else {

@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="Threads2.2">
+    <list default="true" id="959ac8dc-9ade-4238-bbfe-67688bcf43ff" name="Changes" comment="DB 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/EmailMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/EmailMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/MessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/MessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/SenderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/SenderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/db/EmailMessageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/db/EmailMessageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/db/EmailQueueDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/db/EmailQueueDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/db/EmailRecipientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/db/EmailRecipientDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/db/SenderConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/uj/sender/db/SenderConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailMessageProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailMessageProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailRecipient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailRecipient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailRecipientProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailRecipientProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/EmailSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/MessageProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/MessageProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/RecipientProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/RecipientProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/SenderApplication$EmailEnquerRunnable$EmailSenderRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/SenderApplication$EmailEnquerRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/SenderApplication$EmailEnquerRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/SenderApplication$EmailPackage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/SenderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/uj/sender/SenderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/edu/uj/sender/EmailSenderTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +43,7 @@
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab8" />
+        <entry key="$PROJECT_DIR$" value="lab9.1" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="master" />
@@ -47,8 +66,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Pobrane/java2021-public-lab09_databases" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Pobrane/java2021-public-lab11_rest" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -59,7 +79,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.pl.edu.uj.sender in java2021">
+  <component name="RunManager" selected="Application.SenderApplication (1)">
     <configuration name="SenderApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edu.uj.sender.SenderApplication" />
       <module name="java2021" />
@@ -135,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.pl.edu.uj.sender in java2021" />
         <item itemvalue="Application.SenderApplication (1)" />
+        <item itemvalue="JUnit.pl.edu.uj.sender in java2021" />
         <item itemvalue="JUnit.EmailSenderTest" />
         <item itemvalue="JUnit.PushSenderTest.testOKMessageAndRecipient" />
         <item itemvalue="JUnit.PushSenderTest" />
@@ -162,6 +182,10 @@
       <workItem from="1641280342646" duration="630000" />
       <workItem from="1641561393358" duration="41000" />
       <workItem from="1641843376986" duration="464000" />
+      <workItem from="1641857986385" duration="1405000" />
+      <workItem from="1641886205319" duration="1296000" />
+      <workItem from="1641993974129" duration="63000" />
+      <workItem from="1642490655950" duration="2007000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1634288449823</created>
@@ -226,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641238804117</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="DB 1.0">
+      <created>1641858284481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641858284481</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +307,7 @@
     <MESSAGE value="Threads2" />
     <MESSAGE value="Threads2.1" />
     <MESSAGE value="Threads2.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Threads2.2" />
+    <MESSAGE value="DB 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB 1.0" />
   </component>
 </project>

@@ -16,7 +16,7 @@ public class EmailMessageDAO implements SenderDAO<EmailMessage> {
 
     @Override
     public Optional<EmailMessage> get(long id) throws DatabaseException {
-        return dbConnection.executeQuery(("SELECT email_message_id from email_message").formatted(id), messageMapper);
+        return dbConnection.executeQuery(("SELECT * FROM email_message WHERE email_message_id = '%d';").formatted(id), messageMapper);
     }
 
     @Override
@@ -31,7 +31,7 @@ public class EmailMessageDAO implements SenderDAO<EmailMessage> {
 
     @Override
     public Long save(EmailMessage emailMessage) throws DatabaseException {
-        final String statement = ("INSERT into email_message VALUES").formatted(emailMessage.getCreationDate(),
+        final String statement = ("INSERT INTO email_message (creation_date, message_title, message_body) VALUES ('%s','%s','%s');").formatted(emailMessage.getCreationDate(),
                 emailMessage.getMessageTitle(),
                 emailMessage.getMessageBody());
         return dbConnection.executeUpdate(statement, true);

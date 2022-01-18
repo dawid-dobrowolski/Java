@@ -19,3 +19,15 @@ a
 .src/main/java/pl/edu/uj/sender/PushSender.java,3/b/3bf3c6858c7fe305388996985f7fc03565fb2062
 Z
 *src/main/java/pl/edu/uj/sender/Sender.java,9/9/99f708b406ab5dde99bc2162867c89bc7200dc1e
+]
+-src/main/java/pl/edu/uj/sender/Recipient.java,d/5/d547bd5ecf2688007956407e970054146618b8c8
+^
+.src/main/java/pl/edu/uj/sender/EmailQueue.java,c/b/cbd82fde96cd9bffa7a5cdeb7c393fdfc05f720d
+d
+4src/main/java/pl/edu/uj/sender/EmailQueueStatus.java,a/8/a804797d6f895d60fcfa3f595d5d50d2ae4321d7
+b
+2src/main/java/pl/edu/uj/sender/EmailRecipient.java,3/9/39882145ebef936afec432633501bd456f56a306
+j
+:src/main/java/pl/edu/uj/sender/EmailRecipientProvider.java,a/e/ae019096cb572f8b8ea61c7d9dea8ea84483ba05
+e
+5src/main/java/pl/edu/uj/sender/RecipientProvider.java,d/a/dae1ff09f6297fd632e97190a7609e57f548dbd1

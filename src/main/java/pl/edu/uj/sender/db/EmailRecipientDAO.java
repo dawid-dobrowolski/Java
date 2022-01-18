@@ -16,7 +16,7 @@ public class EmailRecipientDAO implements SenderDAO<EmailRecipient> {
 
     @Override
     public Optional<EmailRecipient> get(long id) throws DatabaseException {
-        return dbConnection.executeQuery(("SELECT email_recipient_id from email_recipient").formatted(id), recipientMapper);
+        return dbConnection.executeQuery(("SELECT * FROM email_recipient WHERE email_recipient_id = '%d';").formatted(id), recipientMapper);
     }
 
     @Override
@@ -26,12 +26,12 @@ public class EmailRecipientDAO implements SenderDAO<EmailRecipient> {
 
     @Override
     public Optional<EmailRecipient> get(String id) throws DatabaseException {
-        return dbConnection.executeQuery(("SELECT email_recipient_address from email_recipient").formatted(id), recipientMapper);
+        return dbConnection.executeQuery(("SELECT * FROM email_recipient WHERE recipient_address = '%s';").formatted(id), recipientMapper);
     }
 
     @Override
     public Long save(EmailRecipient emailRecipient) throws DatabaseException {
-        final String statement = ("INSERT into email_recipient VALUES").formatted(emailRecipient.getCreationDate(),
+        final String statement = ("INSERT INTO email_recipient (creation_date, recipient_address) VALUES ('%s','%s');").formatted(emailRecipient.getCreationDate(),
                 emailRecipient.getRecipientAddress());
         return dbConnection.executeUpdate(statement, true);
     }
