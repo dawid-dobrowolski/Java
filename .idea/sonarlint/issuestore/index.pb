@@ -1,8 +1,6 @@
 
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-b
-2src/test/java/pl/edu/uj/sender/PushSenderTest.java,4/5/4550534da9b65a25747c319ad417e5ccff429113
 Œ
 \.idea/shelf/Uncommitted_changes_before_Checkout_at_21_12_2021,_01_53_[Changes]/shelved.patch,3/9/391c23e6edd3ea45e10200b39b4541205a8638d9
 
@@ -21,13 +19,3 @@ Z
 *src/main/java/pl/edu/uj/sender/Sender.java,9/9/99f708b406ab5dde99bc2162867c89bc7200dc1e
 ]
 -src/main/java/pl/edu/uj/sender/Recipient.java,d/5/d547bd5ecf2688007956407e970054146618b8c8
-^
-.src/main/java/pl/edu/uj/sender/EmailQueue.java,c/b/cbd82fde96cd9bffa7a5cdeb7c393fdfc05f720d
-d
-4src/main/java/pl/edu/uj/sender/EmailQueueStatus.java,a/8/a804797d6f895d60fcfa3f595d5d50d2ae4321d7
-b
-2src/main/java/pl/edu/uj/sender/EmailRecipient.java,3/9/39882145ebef936afec432633501bd456f56a306
-j
-:src/main/java/pl/edu/uj/sender/EmailRecipientProvider.java,a/e/ae019096cb572f8b8ea61c7d9dea8ea84483ba05
-e
-5src/main/java/pl/edu/uj/sender/RecipientProvider.java,d/a/dae1ff09f6297fd632e97190a7609e57f548dbd1

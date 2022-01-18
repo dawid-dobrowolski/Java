@@ -37,20 +37,20 @@ class EmailSenderTest {
     Recipient recipient = new EmailRecipient("MR.Smith@example.com");
     sender.send(message, recipient);
     assertEquals(
-        "[Email] Message sent, title= 'Test title', bodyMD5= '82dfa5549ebc9afc168eb7931ebece5f', recipient= '***@example.com'\n",
-        systemOutContent.toString());
+            "[Email] Message sent, title= 'Test title', bodyMD5= '82dfa5549ebc9afc168eb7931ebece5f', recipient= '***@example.com'\n",
+            systemOutContent.toString());
   }
 
   @ParameterizedTest
   @NullAndEmptySource
   @ValueSource(
-      strings = {
-        "null",
-        "thisIsNotAValidEmail",
-        "smithexample.com",
-        "smith@examp@le.com",
-        "MR.Smith+example.com"
-      })
+          strings = {
+                  "null",
+                  "thisIsNotAValidEmail",
+                  "smithexample.com",
+                  "smith@examp@le.com",
+                  "MR.Smith+example.com"
+          })
   void testEmptyOrInvalidRecipient(String invalidValue) {
     EmailSender sender = new EmailSender();
     Message message = new EmailMessage("Test title", "Test message");
